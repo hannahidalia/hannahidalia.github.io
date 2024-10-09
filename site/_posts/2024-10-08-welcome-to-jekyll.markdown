@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to HannahIdalia.com!"
 date:   2024-10-08 14:34:36 -1000
 categories: jekyll update
 ---
