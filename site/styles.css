@@ -1,0 +1,357 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and fonts */
+body {
+    font-family: 'Helvetica Neue', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333333; /* Dark gray for primary text */
+    background-color: #F2F5FF; /* Light periwinkle background for the page */
+}
+
+/* Optional: Adjust headings for better readability and emphasis */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', serif;
+    color: #333333; /* Keep headings dark gray for a clean look */
+}
+
+p {
+    color: #666666; /* Lighter gray for general text to maintain elegance */
+}
+
+/* Navbar */
+header {
+    background-color: #ffffff;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; /* Allow menu items to wrap */
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333333; /* Dark gray for navbar links */
+    font-size: 1rem;
+}
+
+/* Add spacing for the CTA buttons */
+.cta-btn {
+    background-color: #FF725E; /* Softened coral for primary CTAs */
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+.cta-btn:hover {
+    background-color: #ff533a; /* Slightly darker coral for hover effect */
+}
+
+/* Secondary Buttons */
+.secondary-btn {
+    background-color: #6C63FF; /* Calm lavender/purple for secondary buttons */
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+.secondary-btn:hover {
+    background-color: #c7aba5; /* Darker purple on hover */
+}
+
+/* Fix the spacing for the CTA button in the navbar */
+nav .cta-btn {
+    margin-left: 1.5rem; /* Add spacing to the left of the button */
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background-color: #e8f3ff; /* Light blue for hero section */
+}
+
+.hero-section {
+    gap: 2rem; /* Add gap between the text and image */
+}
+
+.hero-text {
+    max-width: 500px;
+    flex: 1; /* Allow the text to take up its own space */
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    margin-bottom: 1.5rem;
+}
+
+.hero-image {
+    flex: 1; /* Allow the image to take up its own space */
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Intro Section */
+.intro-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.intro-section h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.intro-section p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+.key-benefits {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+    flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
+}
+
+/* Add spacing between the key-benefits buttons */
+.key-benefits li {
+    background-color: #6C63FF;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 0.5rem; /* Add margin between the buttons */
+    display: inline-block;
+    text-align: center;
+}
+
+.intro-section .cta-btn {
+    background-color: #FF725E;
+}
+
+/* Why Section */
+.why-section {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
+
+.why-section h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Services Section */
+.services-section {
+    padding: 4rem 2rem;
+}
+
+.services-section .service-item {
+    margin-bottom: 2rem;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.testimonial {
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
+
+.contact-form input, .contact-form textarea {
+    background-color: #f7f7f7; /* Soft gray for form fields */
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: white;
+    padding: 2rem 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+footer ul li {
+    margin-left: 1.5rem;
+}
+
+footer ul li a {
+    color: #6C63FF; /* Purple for links in the footer */
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #5249d8; /* Darker shade of purple for footer links on hover */
+}
+
+.social-media {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #6C63FF; /* General link color */
+}
+
+a:hover {
+    color: #5249d8; /* Darker shade of purple on hover */
+}
+
+/* Resources Section */
+.resources-section {
+    padding: 4rem 2rem;
+}
+
+.resources-section .resources-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+}
+
+.resources-section .resources-item .cta-btn {
+    background-color: #6C63FF; /* Secondary button color for resources */
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.resources-section .resources-item .cta-btn:hover {
+    background-color: #5249d8; /* Darker shade for hover effect */
+}
+
+/* Media query for medium-width screens */
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column; /* Stack the navigation vertically */
+        align-items: center; /* Center align all nav items */
+    }
+
+    nav .cta-btn {
+        margin: 1rem 0; /* Add margin around the button */
+        text-align: center; /* Center the button text */
+        width: auto; /* Auto width to fit the text */
+        display: block; /* Ensure block-level behavior */
+    }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .key-benefits {
+        flex-direction: column; /* Stack the buttons vertically */
+        align-items: center;
+    }
+
+    .key-benefits li {
+        width: 100%; /* Full width for the key-benefits buttons */
+        margin: 0.5rem 0;
+    }
+
+    .cta-btn {
+        width: 100%; /* Full width for the CTA button */
+    }
+
+    /* Adjust hero section for smaller screens */
+    .hero-section {
+        flex-direction: column; /* Stack the text and image vertically */
+        align-items: center;
+    }
+
+    .hero-image img {
+        width: 80%; /* Make the image smaller on narrow screens */
+        margin-top: 1rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; /* Center the image */
+    }
+
+    /* Navbar adjustments for smaller screens */
+    nav {
+        flex-direction: column; /* Stack the navigation vertically */
+    }
+
+    nav ul {
+        margin-bottom: 1rem;
+        justify-content: center;
+    }
+
+    nav .cta-btn {
+        margin: 1rem 0 0 0; /* Ensure proper spacing at the top */
+        width: 100%; /* Full width for the CTA button */
+        text-align: center; /* Center-align the text */
+    }
+
+    /* Read More button adjustments for small screens */
+    .resources-section .resources-item {
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+    }
+
+    .resources-section .resources-item .cta-btn {
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem; /* Ensure there is space between buttons */
+    }
+}
