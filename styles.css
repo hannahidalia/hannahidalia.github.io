@@ -87,16 +87,17 @@ nav ul li a {
 }
 
 
-/* Add spacing for the CTA buttons */
 .cta-btn {
-    background-color: #FF725E; /* Softened coral for primary CTAs */
+    background-color: #FF725E; /* Coral color for the button */
     color: white;
-    padding: 0.7rem 1.5rem;
+    padding: 0.75rem 1.5rem; /* Adjust padding to center the text */
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    text-align: center; /* Center the text horizontally */
     display: inline-block;
-    margin: 1rem 0;
+    width: auto; /* Ensure the width of the button adjusts based on the text */
+    line-height: normal; /* Ensure line height does not affect text centering */
 }
 
 .cta-btn:hover {
