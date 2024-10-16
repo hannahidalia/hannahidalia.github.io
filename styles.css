@@ -401,7 +401,7 @@ footer p {
 
 .footer-content ul li a {
     text-decoration: none;
-    color: #8a6988;
+    color: #a46fa1;
 }
 
 .footer-content ul li a:hover {
@@ -412,7 +412,7 @@ footer p {
 .footer-content p a {
     display: inline-block; /* Ensure block-like wrapping behavior */
     margin: 0 0.3rem; /* Add small spacing between inline links */
-    color: #8a6988;
+    color: #a46fa1;
     text-decoration: none;
 }
 
