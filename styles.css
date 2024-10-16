@@ -126,22 +126,20 @@ nav .cta-btn {
     margin-left: 1.5rem; /* Add spacing to the left of the button */
 }
 
-/* Hero Section */
 .hero-section {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center; /* Center the content horizontally */
+    flex-direction: row; /* Keep text and image side by side */
     padding: 4rem 2rem;
-    background-color: #e8f3ff; /* Light blue for hero section */
-}
-
-.hero-section {
-    gap: 2rem; /* Add gap between the text and image */
+    max-width: 1200px; /* Limit the section width */
+    margin: 0 auto; /* Center the entire section */
+    gap: 2rem; /* Add space between the text and image */
 }
 
 .hero-text {
-    max-width: 500px;
-    flex: 1; /* Allow the text to take up its own space */
+    max-width: 500px; /* Keep the text content constrained */
+    flex: 1; /* Allow the text to grow and shrink within the section */
 }
 
 .hero-text h2 {
@@ -154,7 +152,7 @@ nav .cta-btn {
 }
 
 .hero-image {
-    flex: 1; /* Allow the image to take up its own space */
+    flex: 1; /* Allow the image to grow and shrink within the section */
 }
 
 .hero-image img {
@@ -499,8 +497,8 @@ footer p {
 
     /* Adjust hero section for smaller screens */
     .hero-section {
-        flex-direction: column; /* Stack the text and image vertically */
-        align-items: center;
+        flex-direction: column; /* Stack text and image vertically */
+        text-align: center;
     }
 
     .hero-image img {
