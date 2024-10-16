@@ -177,28 +177,41 @@ nav .cta-btn {
     margin: 0 auto 2rem;
 }
 
-.key-benefits {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 2rem;
-    flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
+/* Key Benefits - Use CSS Grid */
+.key-benefits-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 buttons per row on larger screens */
+    gap: 1.5rem; /* Space between buttons */
+    justify-items: center; /* Center buttons */
+    margin-bottom: 2rem; /* Space below the buttons */
 }
 
-/* Add spacing between the key-benefits buttons */
-.key-benefits li {
+/* Button styling */
+.benefit-btn {
     background-color: #6C63FF;
     color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
     font-weight: bold;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    margin: 0.5rem; /* Add margin between the buttons */
-    display: inline-block;
     text-align: center;
+    min-width: 200px;
+    max-width: 250px;
+    transition: background-color 0.3s ease;
+}
+
+.benefit-btn:hover {
+    background-color: #5249d8;
 }
 
 .intro-section .cta-btn {
     background-color: #FF725E;
+    padding: 0.75rem 1.5rem;
+    display: inline-block;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* Why Section */
@@ -248,23 +261,43 @@ nav .cta-btn {
     border-radius: 5px;
 }
 
+/* Links */
+a {
+    color: #6C63FF; /* General link color */
+}
+
+a:hover {
+    color: #5249d8; /* Darker shade of purple on hover */
+}
+
+/* Resources Section */
+.resources-section {
+    padding: 4rem 2rem;
+}
+
+.resources-section .resources-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+}
+
+.resources-section .resources-item .cta-btn {
+    background-color: #6C63FF; /* Secondary button color for resources */
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.resources-section .resources-item .cta-btn:hover {
+    background-color: #5249d8; /* Darker shade for hover effect */
+}
+
 /* Footer */
 footer {
     background-color: #333333;
     color: white;
     padding: 2rem 0;
 }
-
-/* footer ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-}
-
-footer ul li {
-    margin-left: 1.5rem;
-} */
 
 /* Ensure footer links wrap properly on small screens */
 footer ul {
@@ -297,35 +330,25 @@ footer p {
     text-align: center;
 }
 
-/* Links */
-a {
-    color: #6C63FF; /* General link color */
+/* Ensure Privacy Policy and Terms of Service links wrap correctly */
+.footer-content p a {
+    display: inline-block; /* Ensure block-like wrapping behavior */
+    margin: 0 0.3rem; /* Add small spacing between inline links */
 }
 
-a:hover {
-    color: #5249d8; /* Darker shade of purple on hover */
-}
-
-/* Resources Section */
-.resources-section {
-    padding: 4rem 2rem;
-}
-
-.resources-section .resources-item {
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    background-color: #f7f7f7;
-    border-radius: 5px;
-}
-
-.resources-section .resources-item .cta-btn {
-    background-color: #6C63FF; /* Secondary button color for resources */
+/* Center the copyright notice */
+.footer-content p {
+    text-align: center;
     margin-top: 1rem;
-    margin-bottom: 1.5rem;
 }
 
-.resources-section .resources-item .cta-btn:hover {
-    background-color: #5249d8; /* Darker shade for hover effect */
+@media (max-width: 1046px) and (min-width: 1024px) {
+    nav .cta-btn {
+        margin: 0 auto; /* Center the button by using auto margins */
+        display: block; /* Ensure block-level behavior */
+        text-align: center; /* Center-align the text */
+        width: auto; /* Auto width to fit the text */
+    }
 }
 
 /* Media query for medium-width screens */
@@ -341,19 +364,14 @@ a:hover {
         width: auto; /* Auto width to fit the text */
         display: block; /* Ensure block-level behavior */
     }
+    .key-benefits-container {
+        grid-template-columns: repeat(2, 1fr); /* Still 2 buttons per row on medium screens */
+    }
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-    .key-benefits {
-        flex-direction: column; /* Stack the buttons vertically */
-        align-items: center;
-    }
-
-    .key-benefits li {
-        width: 100%; /* Full width for the key-benefits buttons */
-        margin: 0.5rem 0;
-    }
+ 
 
     .cta-btn {
         width: 100%; /* Full width for the CTA button */
@@ -410,21 +428,20 @@ a:hover {
 }
 
 
-/* Ensure Privacy Policy and Terms of Service links wrap correctly */
-.footer-content p a {
-    display: inline-block; /* Ensure block-like wrapping behavior */
-    margin: 0 0.3rem; /* Add small spacing between inline links */
-}
-
-/* Center the copyright notice */
-.footer-content p {
-    text-align: center;
-    margin-top: 1rem;
-}
-
 /* For extra small screens, ensure links in the footer don't crowd */
 @media (max-width: 480px) {
+    .key-benefits-container {
+        grid-template-columns: 1fr; /* 1 button per row */
+    }
+    .benefit-btn {
+        width: 100%; /* Full width on very small screens */
+    }
+
+    .cta-btn {
+        width: 100%; /* Full width for the CTA button */
+    }
     footer ul {
         font-size: 0.9rem; /* Slightly reduce font size for smaller screens */
     }
+    
 }
