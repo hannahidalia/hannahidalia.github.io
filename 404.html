@@ -1,1 +1,113 @@
-404 Not Found :)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Centering content inside the 404 section */
+        .not-found-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            min-height: 70vh; /* Adjust this as per design */
+            padding: 2rem;
+        }
+
+        .not-found-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .not-found-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .centered-image {
+            max-width: 60%;
+            height: auto;
+            margin-bottom: 2rem;
+        }
+
+        .not-found-section .cta-btn {
+            background-color: #FF725E; /* Coral color */
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .not-found-section .cta-btn:hover {
+            background-color: #ff533a; /* Darker coral */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .centered-image {
+                max-width: 80%;
+            }
+
+            .not-found-section h2 {
+                font-size: 2rem;
+            }
+
+            .not-found-section p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Hannah Idalia</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="#book" class="cta-btn">Book a Free Discovery Call</a>
+        </nav>
+    </header>
+
+    <!-- 404 Section -->
+    <section id="not-found" class="not-found-section">
+        <h2>404: Page Not Found</h2>
+        <p>We're sorry, but the page you're looking for doesn't exist.</p>
+		<a href="index.html" >
+			<img src="images/404.webp" alt="404 Error - Page Not Found" class="centered-image">
+		</a>
+        <a href="index.html" class="cta-btn">Return to Homepage</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+            <div class="social-media">
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+            <p>© 2024 Hannah Idalia. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
