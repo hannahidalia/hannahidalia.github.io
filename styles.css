@@ -324,6 +324,10 @@ a:hover {
     margin-bottom: 1.5rem;
 }
 
+.intro-section .cta-btn:hover {
+    background-color: #b3974f; /* Darker shade for hover effect */
+}
+
 .resources-section .resources-item .cta-btn:hover {
     background-color: #5c3d5a; /* Darker shade for hover effect */
 }
