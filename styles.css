@@ -163,6 +163,10 @@ nav .cta-btn {
 
 /* Intro Section */
 .intro-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 4rem 2rem;
     text-align: center;
 }
@@ -177,13 +181,13 @@ nav .cta-btn {
     margin: 0 auto 2rem;
 }
 
-/* Key Benefits - Use CSS Grid */
+/* Container for the buttons */
 .key-benefits-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 buttons per row on larger screens */
-    gap: 1.5rem; /* Space between buttons */
-    justify-items: center; /* Center buttons */
-    margin-bottom: 2rem; /* Space below the buttons */
+    grid-template-columns: repeat(2, 1fr); /* Ensure two buttons per row */
+    gap: 1.5rem;
+    max-width: 900px; /* Set a maximum width to avoid excessive stretching */
+    margin: 0 auto 1.5rem; /* Center the entire grid container */
 }
 
 /* Button styling */
@@ -195,12 +199,12 @@ nav .cta-btn {
     text-decoration: none;
     font-weight: bold;
     text-align: center;
-    min-width: 200px;
-    max-width: 250px;
     transition: background-color 0.3s ease;
+    width: 100%; /* Ensure full width within grid column */
 }
 
 .benefit-btn:hover {
+	color: white;
     background-color: #5249d8;
 }
 
@@ -342,12 +346,26 @@ footer p {
     margin-top: 1rem;
 }
 
-@media (max-width: 1046px) and (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1046px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap; /* Ensure items don't wrap */
+    }
+
+    nav ul {
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-start; /* Keep nav items aligned to the left */
+        gap: 1rem;
+    }
+
     nav .cta-btn {
-        margin: 0 auto; /* Center the button by using auto margins */
-        display: block; /* Ensure block-level behavior */
-        text-align: center; /* Center-align the text */
-        width: auto; /* Auto width to fit the text */
+        margin-left: auto; /* Push the button to the right */
+        display: block;
+        width: auto;
+        text-align: center; /* Ensure the button text stays centered */
     }
 }
 
@@ -364,15 +382,34 @@ footer p {
         width: auto; /* Auto width to fit the text */
         display: block; /* Ensure block-level behavior */
     }
+ 
+}
+
+/* Button behavior on larger screens */
+@media (min-width: 1024px) {
     .key-benefits-container {
-        grid-template-columns: repeat(2, 1fr); /* Still 2 buttons per row on medium screens */
+        justify-content: center; /* Center the buttons in rows of 2 */
+    }
+
+    .benefit-btn {
+        flex: 1 1 calc(50% - 2rem); /* Two buttons per row with even spacing */
+        max-width: 350px; /* Limit max width */
     }
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
- 
+    .key-benefits-container {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        align-items: center; /* Center-align vertically stacked buttons */
+    }
 
+    .benefit-btn {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 100%; /* Ensure buttons fill the container */
+        margin-bottom: 1rem; /* Space between stacked buttons */
+    }
+	
     .cta-btn {
         width: 100%; /* Full width for the CTA button */
     }
