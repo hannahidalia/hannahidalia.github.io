@@ -301,6 +301,28 @@ a:hover {
 }
 
 /* Footer */
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Space between the icons */
+    margin-top: 1rem;
+}
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
+    color: #6C63FF; /* Lavender/purple color */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover svg {
+    color: #5249d8; /* Darker purple on hover */
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+
+
+
 footer {
     background-color: #333333;
     color: white;
@@ -338,16 +360,40 @@ footer p {
     text-align: center;
 }
 
+.footer-content ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Space between footer links */
+    margin-bottom: 1rem;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: #6C63FF;
+}
+
+.footer-content ul li a:hover {
+    color: #5249d8; /* Darker shade on hover */
+}
+
 /* Ensure Privacy Policy and Terms of Service links wrap correctly */
 .footer-content p a {
     display: inline-block; /* Ensure block-like wrapping behavior */
     margin: 0 0.3rem; /* Add small spacing between inline links */
+    color: #6C63FF;
+    text-decoration: none;
+}
+
+.footer-content p a:hover {
+    color: #5249d8;
 }
 
 /* Center the copyright notice */
 .footer-content p {
     text-align: center;
     margin-top: 1rem;
+    color: #666;
 }
 
 @media (min-width: 1024px) and (max-width: 1046px) {
