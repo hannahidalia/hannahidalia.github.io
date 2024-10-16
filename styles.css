@@ -185,22 +185,26 @@ nav .cta-btn {
 .key-benefits-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Ensure two buttons per row */
-    gap: 1.5rem;
+    gap: 1rem;
     max-width: 900px; /* Set a maximum width to avoid excessive stretching */
     margin: 0 auto 1.5rem; /* Center the entire grid container */
 }
 
-/* Button styling */
 .benefit-btn {
     background-color: #6C63FF;
     color: white;
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem 1rem; 
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
     text-align: center;
+    flex: 1 1 45%;
+    max-width: 300px;
     transition: background-color 0.3s ease;
-    width: 100%; /* Ensure full width within grid column */
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align content vertically */
+    justify-content: center; /* Center content horizontally */
+    height: 80px; /* Set a fixed height */
 }
 
 .benefit-btn:hover {
