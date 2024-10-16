@@ -88,7 +88,7 @@ nav ul li a {
 
 
 .cta-btn {
-    background-color: #FF725E; /* Coral color for the button */
+    background-color: #e4c77b; /* Coral color for the button */
     color: white;
     padding: 0.75rem 1.5rem; /* Adjust padding to center the text */
     border-radius: 5px;
@@ -101,12 +101,12 @@ nav ul li a {
 }
 
 .cta-btn:hover {
-    background-color: #ff533a; /* Slightly darker coral for hover effect */
+    background-color: #b3974f; /* Slightly darker coral for hover effect */
 }
 
 /* Secondary Buttons */
 .secondary-btn {
-    background-color: #6C63FF; /* Calm lavender/purple for secondary buttons */
+    background-color: #8a6988; /* Calm lavender/purple for secondary buttons */
     color: white;
     padding: 0.7rem 1.5rem;
     border-radius: 5px;
@@ -192,7 +192,7 @@ nav .cta-btn {
 }
 
 .benefit-btn {
-    background-color: #6C63FF;
+    background-color: #8a6988;
     color: white;
     padding: 0.5rem 1rem; 
     border-radius: 8px;
@@ -210,11 +210,11 @@ nav .cta-btn {
 
 .benefit-btn:hover {
 	color: white;
-    background-color: #5249d8;
+    background-color: #5c3d5a;
 }
 
 .intro-section .cta-btn {
-    background-color: #FF725E;
+    background-color: #e4c77b;
     padding: 0.75rem 1.5rem;
     display: inline-block;
     border-radius: 8px;
@@ -259,7 +259,7 @@ nav .cta-btn {
 .toast {
   visibility: hidden; /* Hidden by default */
   min-width: 400px; /* Make the toast wider */
-  background-color: #FF725E; /* Your softened coral color */
+  background-color: #e4c77b; /* Your softened coral color */
   color: white; /* White text for contrast */
   text-align: center;
   border-radius: 12px; /* Softer border radius for a clean look */
@@ -299,11 +299,11 @@ nav .cta-btn {
 
 /* Links */
 a {
-    color: #6C63FF; /* General link color */
+    color: #8a6988; /* General link color */
 }
 
 a:hover {
-    color: #5249d8; /* Darker shade of purple on hover */
+    color: #5c3d5a; /* Darker shade of purple on hover */
 }
 
 /* Resources Section */
@@ -319,13 +319,13 @@ a:hover {
 }
 
 .resources-section .resources-item .cta-btn {
-    background-color: #6C63FF; /* Secondary button color for resources */
+    background-color: #8a6988; /* Secondary button color for resources */
     margin-top: 1rem;
     margin-bottom: 1.5rem;
 }
 
 .resources-section .resources-item .cta-btn:hover {
-    background-color: #5249d8; /* Darker shade for hover effect */
+    background-color: #5c3d5a; /* Darker shade for hover effect */
 }
 
 /* Footer */
@@ -339,12 +339,12 @@ a:hover {
 .social-icon svg {
     width: 24px;
     height: 24px;
-    color: #6C63FF; /* Lavender/purple color */
+    color: #8a6988; /* Lavender/purple color */
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-icon:hover svg {
-    color: #5249d8; /* Darker purple on hover */
+    color: #5c3d5a; /* Darker purple on hover */
     transform: scale(1.1); /* Slight zoom on hover */
 }
 
@@ -371,12 +371,12 @@ footer ul li {
 }
 
 footer ul li a {
-    color: #6C63FF; /* Purple for links in the footer */
+    color: #8a6988; /* Purple for links in the footer */
     text-decoration: none;
 }
 
 footer ul li a:hover {
-    color: #5249d8; /* Darker shade of purple for footer links on hover */
+    color: #5c3d5a; /* Darker shade of purple for footer links on hover */
 }
 
 .social-media {
@@ -398,23 +398,23 @@ footer p {
 
 .footer-content ul li a {
     text-decoration: none;
-    color: #6C63FF;
+    color: #8a6988;
 }
 
 .footer-content ul li a:hover {
-    color: #5249d8; /* Darker shade on hover */
+    color: #5c3d5a; /* Darker shade on hover */
 }
 
 /* Ensure Privacy Policy and Terms of Service links wrap correctly */
 .footer-content p a {
     display: inline-block; /* Ensure block-like wrapping behavior */
     margin: 0 0.3rem; /* Add small spacing between inline links */
-    color: #6C63FF;
+    color: #8a6988;
     text-decoration: none;
 }
 
 .footer-content p a:hover {
-    color: #5249d8;
+    color: #5c3d5a;
 }
 
 /* Center the copyright notice */
