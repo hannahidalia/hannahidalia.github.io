@@ -19,8 +19,15 @@ h1, h2, h3, h4, h5, h6 {
     color: #333333; /* Keep headings dark gray for a clean look */
 }
 
+/* Heading Styles */
+h2, h3 {
+    margin-bottom: 1.5rem; /* Add spacing after headings */
+}
+
 p {
     color: #666666; /* Lighter gray for general text to maintain elegance */
+	margin-bottom: 1.5rem; /* Add space between paragraphs */
+    line-height: 1.7; /* Improve readability */
 }
 
 /* Navbar */
@@ -53,6 +60,17 @@ nav ul li a {
     color: #333333; /* Dark gray for navbar links */
     font-size: 1rem;
 }
+/* Section Spacing */
+.about-section {
+    padding: 4rem 2rem; /* Add padding around the section for breathing room */
+}
+
+.container {
+    max-width: 1200px; /* Limit the container width for readability */
+    margin: 0 auto; /* Center the container */
+    padding: 0 1.5rem; /* Add padding to the sides */
+}
+
 
 /* Add spacing for the CTA buttons */
 .cta-btn {
