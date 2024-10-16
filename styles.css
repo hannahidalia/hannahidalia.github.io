@@ -204,7 +204,7 @@ nav .cta-btn {
     display: flex; /* Use flexbox */
     align-items: center; /* Align content vertically */
     justify-content: center; /* Center content horizontally */
-    height: 80px; /* Set a fixed height */
+    height: 65px; /* Set a fixed height */
 }
 
 .benefit-btn:hover {
