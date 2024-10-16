@@ -255,7 +255,7 @@ footer {
     padding: 2rem 0;
 }
 
-footer ul {
+/* footer ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -264,6 +264,19 @@ footer ul {
 
 footer ul li {
     margin-left: 1.5rem;
+} */
+
+/* Ensure footer links wrap properly on small screens */
+footer ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center align on larger screens */
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0.5rem 1rem; /* Add some margin between links */
 }
 
 footer ul li a {
@@ -386,5 +399,32 @@ a:hover {
         width: 100%;
         margin-top: 1rem;
         margin-bottom: 1.5rem; /* Ensure there is space between buttons */
+    }
+    footer ul {
+        flex-direction: column; /* Stack links vertically on small screens */
+        align-items: center; /* Center the links */
+    }
+    .footer-content p {
+        text-align: center; /* Ensure centered text */
+    }	
+}
+
+
+/* Ensure Privacy Policy and Terms of Service links wrap correctly */
+.footer-content p a {
+    display: inline-block; /* Ensure block-like wrapping behavior */
+    margin: 0 0.3rem; /* Add small spacing between inline links */
+}
+
+/* Center the copyright notice */
+.footer-content p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* For extra small screens, ensure links in the footer don't crowd */
+@media (max-width: 480px) {
+    footer ul {
+        font-size: 0.9rem; /* Slightly reduce font size for smaller screens */
     }
 }
