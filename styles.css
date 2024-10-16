@@ -86,9 +86,8 @@ nav ul li a {
     padding: 0 1.5rem; /* Add padding to the sides */
 }
 
-
 .cta-btn {
-    background-color: #e4c77b; /* Coral color for the button */
+    background-color: #a38c6d; /* Coral color for the button */
     color: white;
     padding: 0.75rem 1.5rem; /* Adjust padding to center the text */
     border-radius: 5px;
@@ -101,7 +100,7 @@ nav ul li a {
 }
 
 .cta-btn:hover {
-    background-color: #b3974f; /* Slightly darker coral for hover effect */
+    background-color: #826e52; /* Slightly darker coral for hover effect */
 }
 
 /* Secondary Buttons */
@@ -214,7 +213,7 @@ nav .cta-btn {
 }
 
 .intro-section .cta-btn {
-    background-color: #e4c77b;
+    background-color: #a38c6d;
     padding: 0.75rem 1.5rem;
     display: inline-block;
     border-radius: 8px;
@@ -259,7 +258,7 @@ nav .cta-btn {
 .toast {
   visibility: hidden; /* Hidden by default */
   min-width: 400px; /* Make the toast wider */
-  background-color: #e4c77b; /* Your softened coral color */
+  background-color: #a38c6d; /* Your softened coral color */
   color: white; /* White text for contrast */
   text-align: center;
   border-radius: 12px; /* Softer border radius for a clean look */
@@ -325,7 +324,7 @@ a:hover {
 }
 
 .intro-section .cta-btn:hover {
-    background-color: #b3974f; /* Darker shade for hover effect */
+    background-color: #826e52; /* Darker shade for hover effect */
 }
 
 .resources-section .resources-item .cta-btn:hover {
