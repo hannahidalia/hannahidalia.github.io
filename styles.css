@@ -65,6 +65,21 @@ nav ul li a {
     padding: 4rem 2rem; /* Add padding around the section for breathing room */
 }
 
+/* Center text and button in sections like Privacy Policy */
+.about-section .container, 
+.privacy-section .container, 
+.terms-section .container {
+    text-align: center;  /* Center-align text */
+}
+
+/* Center CTA button */
+.about-section .cta-btn, 
+.privacy-section .cta-btn, 
+.terms-section .cta-btn {
+    display: inline-block; /* Ensure the button remains inline */
+    margin: 1.5rem auto; /* Add auto margins to center it */
+}
+
 .container {
     max-width: 1200px; /* Limit the container width for readability */
     margin: 0 auto; /* Center the container */
