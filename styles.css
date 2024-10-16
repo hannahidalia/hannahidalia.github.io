@@ -255,6 +255,33 @@ nav .cta-btn {
     font-style: italic;
 }
 
+/* Updated Toast Styling */
+.toast {
+  visibility: hidden; /* Hidden by default */
+  min-width: 400px; /* Make the toast wider */
+  background-color: #FF725E; /* Your softened coral color */
+  color: white; /* White text for contrast */
+  text-align: center;
+  border-radius: 12px; /* Softer border radius for a clean look */
+  padding: 20px;
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  top: 50%; /* Center it vertically */
+  transform: translate(-50%, -50%); /* Center it horizontally and vertically */
+  font-size: 1.5rem; /* Increase the font size */
+  font-weight: bold; /* Emphasize the message */
+  opacity: 0;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a soft shadow for a more refined look */
+}
+
+/* Toast visible */
+.toast.show {
+  visibility: visible;
+  opacity: 1;
+}
+
 /* Contact Section */
 .contact-section {
     padding: 4rem 2rem;

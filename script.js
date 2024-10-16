@@ -24,3 +24,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+// Add this script to your index.html just before the closing </body> tag
+(function() {
+  // Get the current URL
+  const urlParams = new URLSearchParams(window.location.search);
+
+  // Check if the 'form=submitted' query parameter is present
+  if (urlParams.get('form') === 'submitted') {
+    // Show the toast notification
+    showToast();
+  }
+
+  // Function to display the toast
+  function showToast() {
+    const toast = document.getElementById('toast');
+    toast.classList.add('show');
+
+    // Hide the toast after 3 seconds
+    setTimeout(function() {
+      toast.classList.remove('show');
+    }, 3000);
+  }
+})();
