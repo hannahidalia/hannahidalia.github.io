@@ -61,7 +61,7 @@ nav ul li a {
     font-size: 1rem;
 }
 /* Section Spacing */
-.about-section {
+.about-section, .privacy-section, .terms-section {
     padding: 4rem 2rem; /* Add padding around the section for breathing room */
 }
 
