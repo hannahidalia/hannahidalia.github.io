@@ -37,6 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
     showToast();
   }
 
+
+
   // Function to display the toast
   function showToast() {
     const toast = document.getElementById('toast');
@@ -48,3 +50,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3000);
   }
 })();
+
