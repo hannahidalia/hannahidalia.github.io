@@ -43,6 +43,7 @@ nav {
     align-items: center;
     padding: 0 2rem;
     flex-wrap: wrap; /* Allow wrapping for small screens */
+	margin-bottom: 0.5rem; /* Reduce space between navbar and button */
 }
 
 nav ul {
@@ -89,6 +90,7 @@ nav ul li a {
 .cta-btn {
     background-color: #a38c6d; /* Coral color for the button */
     color: white;
+	margin-top: 0; /* Remove unnecessary top margin */
     padding: 0.75rem 1.5rem; /* Adjust padding to center the text */
     border-radius: 5px;
     text-decoration: none;
